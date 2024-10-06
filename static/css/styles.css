@@ -1,0 +1,79 @@
+/* static/css/styles.css */
+
+/* General Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h3 {
+    color: #343a40;
+}
+
+/* Seat Map Styles */
+.seat-map {
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.seat {
+    position: relative;
+    margin: 5px;
+}
+
+.seat-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-weight: bold;
+}
+
+.seat-number.available {
+    background-color: #28a745; /* Green for available */
+}
+
+.seat-number.booked {
+    background-color: #dc3545; /* Red for booked */
+    cursor: not-allowed;
+}
+
+.seat-number:hover.available {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .seat-number {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+}
+
+.seat-number.available:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* static/css/styles.css */
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Transition for Seat Map Refresh */
+.seat-map {
+    transition: all 0.3s ease-in-out;
+}
