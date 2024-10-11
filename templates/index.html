@@ -54,29 +54,57 @@
                 <!-- Rows and Seats will be dynamically generated -->
             </div>
         </div>
-        <!-- Add this section within the main container, preferably in an admin section -->
-<div class="card mt-5 mb-4 shadow-sm">
-    <div class="card-body">
-        <h5 class="card-title">Admin Panel</h5>
-        <form id="resetForm" class="row g-3">
-            <div class="col-md-6 offset-md-3 d-flex align-items-center">
-                <input type="password" id="resetKey" class="form-control me-3" placeholder="Enter Reset Key" required>
-                <button type="submit" class="btn btn-danger"><i class="fas fa-undo"></i> Reset Database</button>
+
+        <!-- Admin Panel -->
+        <div class="card mt-5 mb-4 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Admin Panel</h5>
+                <form id="resetForm" class="row g-3">
+                    <div class="col-md-6 offset-md-3 d-flex align-items-center">
+                        <input type="password" id="resetKey" class="form-control me-3" placeholder="Enter Reset Key" required>
+                        <button type="submit" class="btn btn-danger"><i class="fas fa-undo"></i> Reset Database</button>
+                    </div>
+                </form>
             </div>
-        </form>
-    </div>
-</div>
+        </div>
 
-<!-- Display Reset Confirmation -->
-<div id="resetConfirmation" class="alert alert-warning d-none" role="alert">
-    <p>All seats have been reset to available.</p>
-</div>
-
+        <!-- Display Reset Confirmation -->
+        <div id="resetConfirmation" class="alert alert-warning d-none" role="alert">
+            <p>All seats have been reset to available.</p>
+        </div>
     </div>
 
     <!-- Footer -->
     <footer class="bg-light text-center text-lg-start mt-5">
-        <div class="text-center p-3">
+        <div class="container p-4">
+            <div class="row">
+                <!-- Project Details -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Project Details</h5>
+                    <p>
+                        Train Seat Booking is a comprehensive application designed to facilitate efficient and user-friendly reservation of train seats. Built with Python Flask for the backend and Angular for the frontend, it ensures a seamless experience for both users and administrators.
+                    </p>
+                </div>
+
+                <!-- Methodology -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Methodology</h5>
+                    <p>
+                        Utilizing a RESTful API architecture, the application integrates Flask-Cors for cross-origin requests and Gunicorn as the WSGI server. The frontend leverages Bootstrap for responsive design and Font Awesome for intuitive icons, ensuring a modern and accessible interface.
+                    </p>
+                </div>
+
+                <!-- GitHub Link -->
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">View code on Github</h5>
+                    <a href="https://github.com/dshubh2809/reservation-tracking" class="btn btn-outline-dark btn-sm me-2" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <!-- Add more social links if needed -->
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3 bg-primary text-white">
             © 2024 Train Seat Booking Application. Developed by Your Name.
         </div>
     </footer>
